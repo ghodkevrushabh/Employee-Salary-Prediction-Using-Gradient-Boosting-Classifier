@@ -1,7 +1,10 @@
 streamlit
+joblib
 pandas
 numpy
 scikit-learn
-joblib
-shap
 matplotlib
+shap
+plotly
+seaborn 
+warnings
