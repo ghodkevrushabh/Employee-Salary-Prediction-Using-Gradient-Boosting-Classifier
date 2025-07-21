@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -23,7 +24,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model_and_create_encoders():
     try:
-        model = joblib.load("adult_income_model_clean.pkl")
+        model = joblib.load("/content/adult_income_model_clean.pkl")
 
         # Create label encoders for categorical variables
         # These mappings should match your training data preprocessing
@@ -155,7 +156,7 @@ EDUCATION_MAPPING = {
 # Main app
 def main():
     # Header
-    st.title("💼 Smart Salary Predictor with AI Insights")
+    st.title("💼 Smart Salary Predictor with Recommendations and Insights")
     st.markdown("### Predict salary class and get personalized recommendations to increase your income!")
 
     # Load model and encoders
@@ -264,7 +265,7 @@ def main():
 
                     # SHAP Analysis
                     if explainer is not None:
-                        st.subheader("🧠Insights & Recommendations by using SHAP")
+                        st.subheader("🧠 Insights & Recommendations (using SHAP)")
 
                         try:
                             # Calculate SHAP values
@@ -336,8 +337,8 @@ def main():
                 st.subheader("🎯 General Feature Importance")
 
                 # Expected feature names (removed relationship and marital-status)
-                expected_features = ['age', 'workclass', 'educational-num', 'occupation', 
-                                   'race', 'gender', 'capital-gain', 'capital-loss', 
+                expected_features = ['age', 'workclass', 'educational-num', 'occupation',
+                                   'race', 'gender', 'capital-gain', 'capital-loss',
                                    'hours-per-week', 'native-country']
 
                 if len(model.feature_importances_) == len(expected_features):
@@ -400,7 +401,7 @@ def main():
 
                 # Check if all required columns are present (removed relationship and marital-status)
                 required_columns = ['age', 'workclass', 'educational-num', 'occupation',
-                                  'race', 'gender', 'capital-gain', 'capital-loss', 
+                                  'race', 'gender', 'capital-gain', 'capital-loss',
                                   'hours-per-week', 'native-country']
 
                 missing_columns = [col for col in required_columns if col not in batch_data.columns]
