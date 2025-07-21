@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 
 # Page configuration
 st.set_page_config(
-    page_title="💼 Smart Salary Predictor",
+    page_title="💼 Employee Salary Predictor",
     page_icon="💼",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -264,7 +264,7 @@ def main():
 
                     # SHAP Analysis
                     if explainer is not None:
-                        st.subheader("🧠 AI Insights & Recommendations")
+                        st.subheader("🧠Insights & Recommendations by using SHAP")
 
                         try:
                             # Calculate SHAP values
