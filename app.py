@@ -23,7 +23,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model_and_create_encoders():
     try:
-        model = joblib.load("/content/adult_income_model_clean.pkl")
+        model = joblib.load("adult_income_model_clean.pkl")
 
         # Create label encoders for categorical variables
         # These mappings should match your training data preprocessing
