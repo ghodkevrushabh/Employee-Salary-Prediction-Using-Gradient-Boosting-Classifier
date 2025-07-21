@@ -1,1 +1,1 @@
-# Employee-Salary-Prediction-Using-Gradient-Boosting
+# Employee-Salary-Prediction-Using-Gradient-Boosting-Classifier
