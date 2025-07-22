@@ -1,4 +1,7 @@
-# 🧠 Employee Salary Prediction App with SHAP Explainability & Streamlit Deployment
+# 🧠 Employee Salary Prediction App with Gradient Boosting Classifier Algorithm SHAP Explainability & Streamlit Deployment
+
+# To Run/test the project, Click on below Link:- https://employee-salary-prediction-using-gradient-boosting-classifier.streamlit.app/
+
 
 Welcome to the **Employee Salary Prediction** project! This Machine Learning app predicts an employee’s income based on various demographic and professional features. It uses **Gradient Boosting Classifier** and offers model explainability using **SHAP (SHapley Additive exPlanations)**. The model is deployed via a **Streamlit web application** for interactive usage.
 
