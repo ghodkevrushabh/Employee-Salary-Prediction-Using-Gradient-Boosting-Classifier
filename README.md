@@ -1,4 +1,4 @@
-# 🧠 Employee Salary Prediction App with Gradient Boosting Classifier Algorithm SHAP Explainability & Streamlit Deployment
+# 🧠 Employee Salary Prediction App with personalized recommendations to increase the income
 
 # To Run/test the project, Click on below Link:- https://employee-salary-prediction-using-gradient-boosting-classifier.streamlit.app/
 
